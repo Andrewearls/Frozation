@@ -1,0 +1,223 @@
+body{
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+a{
+	color: #01FAE6;
+}
+
+a:hover{
+	color: #01FAE6;
+	text-decoration: none;
+}
+
+.container{
+	padding-top: 70px;
+	padding-bottom: 75px;
+	
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+nav {
+	z-index: 100;
+	background-image: url(../Images/ProductionImages/Nav.png);
+	color: white;
+	font-size: 1.3em;
+	line-height: 62px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+	nav.navbar{
+		padding: 0px;
+	}
+	nav .container{
+		padding: 0px;	
+		width: 100%;
+		max-width: 900px;
+	}
+	nav .row{
+		
+		width: 100%;
+		text-align: center;
+
+	}
+	nav a{
+		width: 100%;
+		color: rgb(3, 200, 230);
+		-webkit-transition: color 0.5s; /* Safari */
+	    transition: color 0.5s;
+
+		
+	}
+
+	nav a:hover{
+		color: rgb(3, 150, 210);
+	}
+
+		nav a div{
+			background-color: rgba(255, 255, 255, 0.0);
+			-webkit-transition: background-color 1s; /* Safari */
+		    transition: background-color 1s;
+		}
+
+		nav a div:hover{
+			background-color: rgb(255, 255, 255, 0.4);
+		}
+
+#carouselHeaderSlides{
+	margin-top: 62px;
+	/*padding-top: 10px;*/
+	height: 100vh;
+	background: url(../Images/ProductionImages/Slider-Back.png) no-repeat center center;
+	background-size: cover;
+}
+
+	#slide-one{
+		padding: 0px;
+		background: url(../Images/ProductionImages/slide-one.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	#slide-two{
+		padding: 0px;
+		background: url(../Images/ProductionImages/StoreFront.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	#slide-three{
+		padding: 0px;
+		background: url(../Images/ProductionImages/Vending.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	.slide-content{
+		height: 100vh;
+	}
+
+#menu{
+	background: url(../Images/ProductionImages/Menu.png) repeat center center;
+	/*background-size: cover;*/
+	/*color: white;*/
+}
+
+#history{
+	background: url(../Images/ProductionImages/History.png) no-repeat center center;
+	background-size: center;
+}
+	
+	#history h2{
+		text-align: center;
+	}
+	#history h3{
+		text-align: center;
+	}
+
+#parties{
+	background-image: url(../Images/ProductionImages/Parties.png);
+	background-size: cover;
+
+}
+
+#location{
+	text-align: center;
+	background: url(../Images/ProductionImages/Location.png);
+}
+
+	#location iframe{
+		margin-top: 20px;
+	}
+
+#contact{
+	background: url(../Images/ProductionImages/Contact.png);
+	/*text-align: center;*/
+	align-content: center;
+}
+
+	#contact .cognito .c-forms-form{
+		min-width: 100%;
+		margin: 0px;
+		/*border: 1px solid blue;*/
+		border-radius: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#contact .cognito .c-action{
+		width: 100%;
+		text-align: center; 
+	}
+
+	#contact .hB0_RLps_0-DoF8m7nooFw{
+		display: none!important;
+	}
+
+footer{
+	background: url(../Images/ProductionImages/Nav.png);
+	color: #01FAE6;
+}
+	footer .container{
+		padding-bottom: 0px;
+	}
+
+	footer h3{
+		text-align: center;
+	}
+
+	footer .top{
+		align-content: center;
+		text-align: center;
+		margin-top: 40px;
+	}
+		footer .top div{
+			width: 100%;
+			margin: auto;			
+		}
+		footer .top a div{
+			height: 115px;
+			width: 115px;
+			border: 3px solid #01FAE6;
+			border-radius: 72px;
+		}	
+	
+	footer .social-links ul{
+		text-align: center;
+	}
+
+	footer .social-links ul li{
+		display: inline;
+		padding-right: 10px;
+	}
+
+	footer ul{
+		border-top: 1px solid #01FAE6;
+		list-style-type: none;
+		padding: 0px;
+		padding-left: 15px;
+		padding-top: 5px;
+		color: #01FAE6;
+	}
+
+		
+
+	footer .credit{
+		margin-top: 20px;
+		text-align: center;
+		color: gray;
+	}
+
+		footer .credit a{
+			color: gray;
+		}
+
+		footer .credit a:hover{
+			text-decoration: none;
+			color: gray;
+		}
+
+
+

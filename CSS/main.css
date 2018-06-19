@@ -220,5 +220,12 @@ footer{
 			color: gray;
 		}
 
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+	nav a.navbar-brand{
+		text-align: left;
+		margin-left: 20px;
+	}
+ }
 
 

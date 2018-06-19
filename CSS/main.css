@@ -77,9 +77,7 @@ nav {
 		width: 100%;
 		color: rgb(3, 200, 230);
 		-webkit-transition: color 0.5s; /* Safari */
-	    transition: color 0.5s;
-
-		
+	    transition: color 0.5s;		
 	}
 
 	nav a:hover{

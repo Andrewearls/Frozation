@@ -42,6 +42,7 @@ nav {
 
 	.navbar-light .navbar-brand{
 		color: rgb(3, 200, 230)!important;
+		line-height: 68px!important;
 	}
 
 	.navbar-light .navbar-brand:hover{

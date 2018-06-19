@@ -60,6 +60,7 @@ nav {
 	.navbar-light .navbar-toggler{
 		color: rgb(3, 200, 230)!important;
 		border-color: rgb(3, 200, 230)!important;
+		margin-top: 22px!important;
 	}
 
 	nav .container{

@@ -12,7 +12,7 @@ a:hover{
 }
 
 button:focus{
-	outline: none;
+	outline: none!important;
 }
 
 .container{
@@ -41,24 +41,24 @@ nav {
 	}
 
 	.navbar-light .navbar-brand{
-		color: rgb(3, 200, 230);
+		color: rgb(3, 200, 230)!important;
 	}
 
 	.navbar-light .navbar-brand:hover{
-		color: rgb(3, 200, 230);
+		color: rgb(3, 200, 230)!important;
 	}
 
 	.navbar-light .navbar-nav .nav-link{
-		color: rgb(3, 200, 230);
+		color: rgb(3, 200, 230)!important;
 	}
 
 	.navbar-light .navbar-nav .nav-link:hover{
-		color: rgb(3, 200, 230);
+		color: rgb(3, 200, 230)!important;
 	}
 
 	.navbar-light .navbar-toggler{
-		color: rgb(3, 200, 230);
-		border-color: rgb(3, 200, 230);
+		color: rgb(3, 200, 230)!important;
+		border-color: rgb(3, 200, 230)!important;
 	}
 
 	nav .container{
@@ -231,12 +231,12 @@ footer{
 		}
 
 		footer .social-links .row{
-			border-top: 1px solid #01FAE6;
-			padding-top: 10px;
+			border-top: 1px solid #01FAE6!important;
+			padding-top: 10px!important;
 		}
 
 	footer .site-nav ul{
-		text-align: center;
+		text-align: center!important;
 	}
 
 	footer ul{

@@ -11,6 +11,10 @@ a:hover{
 	text-decoration: none;
 }
 
+button:focus{
+	outline: none;
+}
+
 .container{
 	padding-top: 70px;
 	padding-bottom: 75px;
@@ -35,6 +39,28 @@ nav {
 	nav.navbar{
 		padding: 0px;
 	}
+
+	.navbar-light .navbar-brand{
+		color: rgb(3, 200, 230);
+	}
+
+	.navbar-light .navbar-brand:hover{
+		color: rgb(3, 200, 230);
+	}
+
+	.navbar-light .navbar-nav .nav-link{
+		color: rgb(3, 200, 230);
+	}
+
+	.navbar-light .navbar-nav .nav-link:hover{
+		color: rgb(3, 200, 230);
+	}
+
+	.navbar-light .navbar-toggler{
+		color: rgb(3, 200, 230);
+		border-color: rgb(3, 200, 230);
+	}
+
 	nav .container{
 		padding: 0px;	
 		width: 100%;

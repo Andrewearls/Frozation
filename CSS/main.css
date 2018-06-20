@@ -29,7 +29,7 @@ button:focus{
 
 nav {
 	z-index: 100;
-	background-image: url(../Images/ProductionImages/Nav.png);
+	background-color: white;
 	color: white;
 	font-size: 1.3em;
 	line-height: 62px;
@@ -99,8 +99,7 @@ nav {
 	margin-top: 62px;
 	/*padding-top: 10px;*/
 	height: 100vh;
-	background: url(../Images/ProductionImages/Slider-Back.png) no-repeat center center;
-	background-size: cover;
+	background-color: white;	
 }
 
 	#slide-one{
@@ -126,14 +125,14 @@ nav {
 	}
 
 #menu{
-	background: url(../Images/ProductionImages/Menu.png) repeat center center;
+	background: url(../Images/ProductionImages/frozation-nation-bg-main.jpg) repeat center center;
 	/*background-size: cover;*/
 	/*color: white;*/
 }
 
 #history{
-	background: url(../Images/ProductionImages/History.png) no-repeat center center;
-	background-size: center;
+	background: url(../Images/ProductionImages/frozationnation-com-bg-image-slides-04.jpg) no-repeat right  center;
+	background-size: cover
 }
 	
 	#history h2{
@@ -144,14 +143,15 @@ nav {
 	}
 
 #parties{
-	background: url(../Images/ProductionImages/Parties.png) no-repeat center center;
+	background: url(../Images/ProductionImages/frozationnation-com-bg-image-slides-03.jpg) no-repeat center center;
 	background-size: cover;
 
 }
 
 #location{
 	text-align: center;
-	background: url(../Images/ProductionImages/Location.png);
+	background: url(../Images/ProductionImages/frozationnation-blue.png) no-repeat center center;
+	background-size: cover;
 }
 	#location .google-maps{
 		position: relative;
@@ -171,7 +171,7 @@ nav {
 		}
 
 #contact{
-	background: url(../Images/ProductionImages/Contact.png);
+	background: url(../Images/ProductionImages/frozation-nation-red-dancer.png);
 	/*text-align: center;*/
 	align-content: center;
 }
@@ -196,7 +196,7 @@ nav {
 	}
 
 footer{
-	background: url(../Images/ProductionImages/Nav.png);
+	background-color: white;
 	color: rgb(3, 200, 230);
 }
 	footer .container{

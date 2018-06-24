@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	    <style type="text/css">
+	    	#canvasDiv{
+	    		border: 1px solid black;
+	    		height: 100vh;
+	    		width: 100%;
+	    	}
+
+	    	button{
+	    		width: 100%;
+	    		margin-top: 10px;
+	    		text-align: center;
+	    	}
+
+
+	    </style>
+
+	    <title>Frozation</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-8 col-lg-9">
+					<div id="canvasDiv"></div>
+				</div>
+				<div class="col-4 col-lg-3">
+					<div class="row">
+						<div>Frozation Nation</div>
+					</div>
+					<div class="row">
+						<div class="col-12"><strong>Step 1:</strong> Choose a Background.</div>
+						<div class="col">
+							<button>One</button>
+						</div>
+						<div class="col">
+							<button>One</button>
+						</div>
+						<div class="col">
+							<button>One</button>
+						</div>
+						<div class="col">
+							<button>One</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12"><strong>Step 2:</strong> Choose a Flovor.</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12"><strong>Step 3:</strong> Choose a Topping.</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+						<div class="col-3">
+							<button>this</button>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+			
+		</div>
+
+		
+
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+
+			var canvasDiv = document.getElementById('canvasDiv');
+			canvas = document.createElement('canvas');
+
+
+			canvas.width = canvasDiv.offsetWidth;
+			canvas.height = canvasDiv.offsetHeight;
+			canvas.setAttribute('id', 'canvas');
+			// canvas.style.width = '100%';
+
+			canvasDiv.appendChild(canvas);
+			if(typeof G_vmlCanvasManager != 'undefined') {
+				canvas = G_vmlCanvasManager.initElement(canvas);
+			}
+			context = canvas.getContext("2d");
+
+			$('#canvas').mousedown(function(e){
+			  var mouseX = e.pageX - this.offsetLeft;
+			  var mouseY = e.pageY - this.offsetTop;
+					
+			  paint = true;
+			  addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop);
+			  redraw();
+			});
+
+			$('#canvas').mousemove(function(e){
+			  if(paint){
+			    addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
+			    redraw();
+			  }
+			});
+
+			$('#canvas').mouseup(function(e){
+			  paint = false;
+			});
+
+			$('#canvas').mouseleave(function(e){
+			  paint = false;
+			});
+
+			var clickX = new Array();
+			var clickY = new Array();
+			var clickDrag = new Array();
+			var paint;
+
+			function addClick(x, y, dragging)
+			{
+			  clickX.push(x);
+			  clickY.push(y);
+			  clickDrag.push(dragging);
+			}
+
+			function redraw(){
+			  	context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
+			  
+			  	context.strokeStyle = "#df4b26";
+			  	context.lineJoin = "round";
+			  	context.lineWidth = 5;
+						
+			  	for(var i=0; i < clickX.length; i++) {		
+			  	  	context.beginPath();
+			  	  	if(clickDrag[i] && i){
+			      	context.moveTo(clickX[i-1], clickY[i-1]);
+			    }else{
+			       	context.moveTo(clickX[i]-1, clickY[i]);
+			    }
+			     	context.lineTo(clickX[i], clickY[i]);
+			     	context.closePath();
+			     	context.stroke();
+			  }
+			}
+
+		</script>
+	</body>
+</html>
